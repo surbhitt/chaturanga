@@ -1,0 +1,117 @@
+.debug {
+  border: 1px black solid;
+}
+
+body {
+  margin: 0px;
+  background-image: radial-gradient(circle, #5c629e, #44475a, #282a36);
+  font-family: 'Quicksand', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0px;
+  items: center;
+  justify: center;
+  text-align: center;
+}
+
+.header-logo {
+  margin-left: -20px;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  font-size: 60px;
+  margin: 0px;
+  padding: 0px;
+  margin-left: -20px;
+  color: #dde6ed;
+}
+
+.seperator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  margin: 50px 0px;
+}
+
+.analyzer {
+  gap: 20px;
+  display: flex;
+}
+
+@media only screen and (max-width: 1160px) {
+  .analyzer {
+    flex-direction: column;
+  }
+}
+
+.board-container {
+  width: 500px;
+  height: 500px;
+  border-radius: 8px;
+  padding: 20px;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
+  border: 1px solid #343434;
+  background: hsla(0, 0%, 100%, 0.026);
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.2);
+}
+
+.chessboard-63f37 {
+  width: 500px;
+  height: 500px;
+}
+
+.board-b72b1 {
+  border: transparent;
+  width: 500px;
+  height: 500px;
+}
+
+.board {
+  height: 500px;
+  width: 500px;
+}
+
+.black-3c85d {
+  background-color: #3c415c;
+}
+
+.white-1e1d7 {
+  background-color: #d3dedc;
+}
+
+.menu-container {
+  border-radius: 8px;
+  padding: 20px;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
+  border: 1px solid #343434;
+  background: hsla(0, 0%, 100%, 0.026);
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+  width: 500px;
+  height: 500px;
+}
+
+.move-history {
+  max-height: 100px;
+  overflow-y: scroll;
+}
