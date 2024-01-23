@@ -13,41 +13,52 @@
   </head>
   <body>
     <header>
-      <img src="img/assets/chesslogo2.png" height="100" class="header-logo" />
+      <img src="./assets/chesslogo2.png" height="100" class="header-logo" />
       <h1 class="header-title" class="">Chaturanga</h1>
     </header>
     <div class="seperator">
-      <img src="./img/assets/line.svg" alt="line" />
-      <img src="./img/assets/line.svg" alt="line" />
+      <img src="./assets/line.svg" alt="line" />
+      <img src="./assets/line.svg" alt="line" />
     </div>
     <main>
-      <p class="intro">Analyze your game.</p>
+      <p class="intro">Fancy a game of good ol' Chess.</p>
       <div class="analyzer">
         <div class="board-container">
           <div id="board" class="board"></div>
         </div>
         <div class="menu-container">
           <div class="menu">
-            Search depth:
-            <select id="search-depth">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3" selected>3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-
-            <br />
-            <span>Positions evaluated: <span id="position-count"></span></span>
-            <br />
-            <span>Time: <span id="time"></span></span>
-            <br />
-            <span>Positions/s: <span id="positions-per-s"></span> </span>
-            <br />
-            <br />
-            <div id="move-history" class="move-history"></div>
+            <div class="switch">
+              <button class="switch-button">Game</button>
+              <button class="switch-button">Analyze</button>
+            </div>
+            <!-- <div><label>FEN</label><input /></div> -->
+            <div class="game-menu">
+              <div class="engine">
+                <div class="depth-dropdown">
+                  <label>Search depth:</label>
+                  <select id="search-depth">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <div class="engine-meta">
+                <div 
+                  >Positions evaluated<span id="position-count"></span
+                ></div>
+                <div >Evaluation took <span id="time"></span></div>
+              </div></div>
+              <span>Moves<span id="positions-per-s"></span> </span>
+              <div id="move-history" class="move-history"></div>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="footer"> 
+        <span class="quote">A weed is but an unloved flower</div>
       </div>
     </main>
     <script src="lib/jquery/jquery-3.2.1.min.js"></script>

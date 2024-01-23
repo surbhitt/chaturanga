@@ -1,10 +1,17 @@
+:root {
+  --c_primary-dark: #282a36;
+  --c_primary-medium: #44475a; 
+  --c_primary-light: #5c629e;
+  --c_secondary: #dde6ed;
+}
+
 .debug {
   border: 1px black solid;
 }
 
 body {
   margin: 0px;
-  background-image: radial-gradient(circle, #5c629e, #44475a, #282a36);
+  background-image: radial-gradient(circle, var(--c_primary-light), var(--c_primary-medium), var(--c_primary-dark));
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -30,7 +37,7 @@ header {
   margin: 0px;
   padding: 0px;
   margin-left: -20px;
-  color: #dde6ed;
+  color: var(--c_secondary); 
 }
 
 .seperator {
@@ -47,6 +54,7 @@ main {
 
 .intro {
   margin: 50px 0px;
+  color: var(--c_secondary)
 }
 
 .analyzer {
@@ -109,9 +117,53 @@ main {
 .menu {
   width: 500px;
   height: 500px;
+  color: 
+  display: flex;
+  flex-direction: column;
+}
+
+.switch {
+  display: flex;
+}
+
+.switch-button {
+  width: 250px;
+  padding: 10px;
+}
+
+.game-menu {
+  padding: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.engine {
+  padding: 10px 5px;
+  display: flex;
+  gap: 10px;
+}
+
+.engine-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.adjustables .option {
+  display:flex;
+  justify-content: space-between
 }
 
 .move-history {
   max-height: 100px;
   overflow-y: scroll;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0px;
+  color: var(--c_secondary);
+  opacity: 50%
+
 }

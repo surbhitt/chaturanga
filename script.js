@@ -285,6 +285,7 @@ var greySquare = function(square) {
 
 var cfg = {
     draggable: true,
+ pieceTheme: 'assets/pieces/{piece}.png',
     position: 'start',
     onDragStart: onDragStart,
     onDrop: onDrop,
